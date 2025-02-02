@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Pairs: Memory Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Matching Pairs: Memory Game</h1>
+        <div class="settings">
+            <label for="theme">Choose Theme:</label>
+            <select id="theme">
+                <option value="numbers">Numbers</option>
+                <option value="animals">Animals</option>
+                <option value="fruits">Fruits</option>
+                <option value="emojis">Emojis</option>
+            </select>
+            <button id="restart">Restart Game</button>
+        </div>
+        <div class="game-board"></div>
+        <div class="stats">
+            <p>Attempts: <span id="attempts">0</span></p>
+            <p>Time: <span id="timer">0</span>s</p>
+        </div>
+        <div id="win-message" class="hidden">
+            Congratulations! You've matched all pairs in <span id="total-attempts"></span> attempts and <span
+                id="total-time"></span> seconds!
+        </div>
+    </div>
+    <footer>
+        <p>Made with ❤️ by Your Name</p>
+    </footer>
+    <audio id="flip-sound" src="flip.mp3"></audio>
+    <audio id="match-sound" src="match.mp3"></audio>
+    <audio id="win-sound" src="win.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+
+</html>
